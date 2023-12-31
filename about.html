@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="T-Lab Studios - Sri Lanka's premier audio and video production studio. Providing high-quality audio and video production services.">
+  <meta name="keywords" content="T-Lab Studios, Tlab Studios, audio production, video production, Sri Lanka, studio, audio services, video services">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
+  <title>T-Lab Studios - Audio and Video Production Studio in Sri Lanka</title>
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+      @keyframes pulse {
+        0% {
+          transform: scale(0.8);
+      
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .fade-in {
+      animation: fadeIn 1s 2s ease-in-out; /* Run the fade-in animation once */
+    }
+      .bg-pulse {
+        animation: pulse 2s 1s 1;
+      }
+    </style>
+</head>
+<body>
+
+  
+  <nav class="fixed top-0 w-full flex items-center justify-between flex-wrap bg-black  p-4 px-10 pl-10 pr-10 rounded-2xl shadow-2xl" style="z-index: 500; padding: 4 10vw;">
+    <div class="flex items-center flex-shrink-0 text-orange-500 font-bold mr-6">
+      <img src="img/nav logo.png" alt="Company Logo" class="h-8 ">
+    </div>
+    <div class="hidden lg:flex lg:w-auto lg:items-center lg:justify-center">
+      <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 text-sm  hover:text-white mx-4 ">
+        Home
+      </a>
+      <a href="portfolio.html" class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 text-sm hover:text-white mx-4">
+        Portfolio
+      </a>
+      <a href="services.html" class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 text-sm hover:text-white mx-4">
+        Services
+      </a>
+      <a href="contact.html" class="block mt-4 lg:inline-block lg:mt-0 text-orange-500 text-sm hover:text-white mx-4">
+        Contact
+      </a>
+      <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 text-white text-sm hover:text-white mx-4">
+        About
+      </a>
+    </div>
+    <div class="block lg:hidden">
+      <button id="toggle-btn" class="flex items-center px-3 py-2 border rounded text-orange-500 font-bold border-orange-500">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </button>
+    </div>
+    <div id="menu" class="w-full flex-grow lg:hidden hidden mt-2 lg:mt-0">
+      <div class="text-sm">
+        <a href="index.html" class="block mt-4 text-center text-orange-500 font-bold hover:text-white mx-4">
+          Home
+        </a>
+        <a href="portfolio.html" class="block mt-4 text-center text-orange-500 font-bold hover:text-white mx-4">
+          Portfolio
+        </a>
+        <a href="services.html" class="block mt-4 text-center text-orange-500 font-bold hover:text-white mx-4">
+          Services
+        </a>
+        <a href="contact.html" class="block mt-4 text-center text-orange-500 font-bold hover:text-white mx-4">
+          Contact
+        </a>
+        <a href="about.html" class="block mt-4 text-center text-white font-bold hover:text-white mx-4">
+          About
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section  class="p-10  pt-20">
+    <h2 class="text-5xl font-bold  text-white text-center">About</h2>
+    <div class=" flex justify-center ">
+      <p class="text-gray-500 text-m text-center p-8">
+        T-Lab was started ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </p>
+      
+    </div>
+    <div class=" flex justify-center ">
+      <div class="cards" style="margin-left: 5vw; margin-right: 5vw; margin-bottom: 40px; margin-top: 40px;">
+          
+          <div class="card red border border-orange-500">
+            <p class="text-2xl p-4">Main Studio</p>
+            <img src="img/img1.jpeg"> <img>
+              <p class="text-gray-500">Create captivating melodies and harmonies with our music composing services. Let us bring your musical ideas to life.</p>
+              <a href="services.html#welcome" class="mt-6 inline-block px-8 py-2 font-semibold text-orange-500">Learn More</a>
+          </div>
+          <div class="card blue border border-orange-500">
+            <p class="text-2xl p-4">Academy Studio</p>
+            <img src="img/img2.jpeg"> <img>
+        
+              <p class="text-gray-500">Elevate your sound quality with our mixing and mastering expertise. Achieve that professional, polished sound you've been aiming for.</p>
+              <a href="services.html#composing" class="mt-6 inline-block px-8 py-2 font-semibold text-orange-500 ">Learn More</a>
+          </div>
+          <div class="card green border border-orange-500">
+            <p class="text-2xl p-4">Video Studio</p>
+            <img src="img/img3.jpeg"> <img>
+              <p class="text-gray-500">Transform your ideas into compelling visuals with our video production. From concept to post-production, we bring stories to life.</p>
+              <a href="services.html#mixing" class="mt-6 inline-block px-8 py-2 font-semibold text-orange-500 ">Learn More</a>
+          </div>
+      </div>
+  </div>
+
+  </div>
+ 
+</section>
+<section>
+  <div class="client-section py-8 section border-t border-orange-500">
+    <div class="container mx-auto text-center">
+      <h2 class="text-5xl font-semibold mb-8 text-white">Meet our team</h2>
+
+      <div class="flex flex-wrap justify-center">
+        <!-- Replace the following URLs with the paths to your client logos -->
+        <div class="client-container mx-4 my-4 sm:mx-2 sm:my-2 md:mx-4 md:my-4 lg:mx-6 lg:my-6 xl:mx-8 xl:my-8">
+          <img src="img/Thusith.jpg" alt="Client 1 Logo" class="p-logo">
+          <h3 class="text-lg font-semibold text-white mt-2">Thusith Niroshona</h3>
+          <p class="text-sm text-gray-400">Founder</p>
+        </div>
+
+        <div class="client-container mx-4 my-4 sm:mx-2 sm:my-2 md:mx-4 md:my-4 lg:mx-6 lg:my-6 xl:mx-8 xl:my-8">
+          <img src="img/Company logo/logo01.jpg" alt="Client 2 Logo" class="p-logo">
+          <h3 class="text-lg font-semibold text-white mt-2">Name 2</h3>
+          <p class="text-sm text-gray-400">Description 2</p>
+        </div>
+
+        <div class="client-container mx-4 my-4 sm:mx-2 sm:my-2 md:mx-4 md:my-4 lg:mx-6 lg:my-6 xl:mx-8 xl:my-8">
+          <img src="img/Company logo/Logo03.jpg" alt="Client 3 Logo" class="p-logo">
+          <h3 class="text-lg font-semibold text-white mt-2">Name 3</h3>
+          <p class="text-sm text-gray-400">Description 3</p>
+        </div>
+        <!-- Add more client containers as needed -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/tlabstudios/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.youtube.com/@TLABPRODUCTIONS" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://instagram.com/tlabstudioslk?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <p>&copy; 2023 T-Lab Studio. Designed by <a href="https://www.coolmotion.com">CoolMotion</a></p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#toggle-btn').click(function() {
+      $('#menu').slideToggle(300);
+    });
+  });
+</script>
+<script>
+      const animatedTextElements = document.querySelectorAll('.animated-text');
+
+      const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('fade-in');
+                  observer.unobserve(entry.target);
+              }
+          });
+      }, { threshold: 0.5 });
+
+      animatedTextElements.forEach(element => {
+          observer.observe(element);
+      });
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+  });
+
+  // Add a scroll event listener to trigger fade-in
+  window.addEventListener('scroll', () => {
+    const elements = document.querySelectorAll('.fade-in');
+    elements.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      if (rect.top <= windowHeight * 0.25) {
+        element.classList.add('fade-in-show');
+      }
+    });
+  });
+</script>
+
+<script>
+  function startCountUpAnimation() {
+    let valueDisplays = document.querySelectorAll(".num");
+    let interval = 1000;
+
+    valueDisplays.forEach((valueDisplay) => {
+      let startValue = 0;
+      let endValue = parseInt(valueDisplay.getAttribute("data-value"));
+      let duration = Math.floor(interval / endValue);
+      let increment = Math.ceil(endValue / (interval / duration));
+
+      let counter = setInterval(function () {
+        startValue += increment;
+        if (startValue > endValue) {
+          startValue = endValue;
+        }
+
+        valueDisplay.textContent = startValue + '+';
+
+        if (startValue === endValue) {
+          clearInterval(counter);
+        }
+      }, duration);
+    });
+  }
+
+  window.onscroll = function () {
+    // Get the current scroll position
+    let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    // Set the threshold for triggering the animation (0.75vh in this case)
+    let triggerPosition = 0.75 * window.innerHeight;
+
+    // Check if the scroll position is greater than or equal to the trigger position
+    if (scrollPosition >= triggerPosition) {
+      // Start the count-up animation
+      startCountUpAnimation();
+
+      // Remove the scroll event listener to ensure the animation is triggered only once
+      window.onscroll = null;
+    }
+  };
+</script>
+
+
+</body>
+</html>
