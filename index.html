@@ -63,7 +63,7 @@
         </a>
     </div>
     <div class="hidden lg:flex lg:w-auto lg:items-center lg:justify-end">
-        <a href="blog.html" class="block mt-4 lg:inline-block lg:mt-0 text-white bg-blue-600 hover:bg-blue-300 py-2 px-4 rounded-full hover:text-white transition duration-300">
+        <a href="https://issuu.com/gavelccs" class="block mt-4 lg:inline-block lg:mt-0 text-white bg-blue-600 hover:bg-blue-300 py-2 px-4 rounded-full hover:text-white transition duration-300">
             The Gavelier
         </a>
     </div>
@@ -107,27 +107,27 @@
 </section>
 <section class="flex items-center justify-center min-h-screen bg-white pt-10">
   <div class="fadeIn container mx-auto text-center bg-pulse fade-in">
-      <h1 class="text-6xl font-bold scaling-text ">
+      <h1 class="text-6xl font-bold scaling-text bg-pulse ">
           <span class="text-blue-500">Empower</span> <span class="text-gray-500 text-2xl">Tomorrow's Leaders,</span><br> <span class="text-black">Today!</span>
       </h1>
       <p class="text-gray-800 text-lg mb-8 px-10 pt-10 hidden md:block">
           The Gavel Club of CCS is an affiliation of Toastmasters International. We empower undergraduates of all backgrounds to enhance their communication and leadership skills.
       </p>
-      <p class="text-gray-800 text-lg mb-8 px-10 pt-10 block sm:hidden">
+      <p class="text-gray-800 text-lg mb-8 px-10 pt-10 block sm:hidden" >
           Welcome to Gavel Club of CCS. We empower undergraduates of all backgrounds to enhance their communication and leadership skills.
       </p>
       <div class="flex justify-center pb-4">
-          <a href="#" class="bg-blue-500 text-white hover:bg-blue-700 hover:text-white py-2 px-6 rounded-full mr-4">Explore More</a>
+          <a href="#" id="scrollToSection1" class="bg-blue-500 text-white hover:bg-blue-700 hover:text-white py-2 px-6 rounded-full mr-4">Explore More</a>
       </div>
 
   </div>
 </section>
 
 
-  <section>
+  <section id="section1">
   <div class="text-black p-10 section border-t border-blue-600 bbox" style="background-color: white;">
     <div class="animated-text">
-    <h3 class="text-5xl font-bold mb-5 text-center text-black">What we do</h3>
+    <h3 class="text-5xl font-bold mb-5 text-center text-black bg-pulse">What we do</h3>
     <p class="text-gray-800 text-m text-center">
       Welcome to the sonic realm of creativity and innovation! At our cutting-edge audio and video production company, we are not just creators; we are curators of experiences that resonate, captivate, and leave an indelible mark.
     </p>
@@ -282,6 +282,20 @@
       }
     });
   });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the button and the target section
+    var scrollToSection1Button = document.getElementById('scrollToSection1');
+    var section1 = document.getElementById('section1');
+
+    // Add click event listener to the button
+    scrollToSection1Button.addEventListener('click', function () {
+        // Use smooth scroll to scroll to the target section
+        section1.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
 </script>
 
 
